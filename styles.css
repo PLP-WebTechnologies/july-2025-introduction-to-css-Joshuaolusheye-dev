@@ -1,0 +1,122 @@
+/* === Color Palette ===
+Primary: Navy Blue #0B2545
+Accent: White #FFFFFF
+Hover Shade: #07315f
+Highlight: #FFD700
+*/
+
+/* Background image for the whole page */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('images/Therapy-session.jpg') no-repeat center center fixed;
+    background-size: cover;  /* Ensures image always covers the screen */
+    color: #0B2545;
+}
+
+/* Transparent overlay over the background */
+.overlay {
+    background-color: rgba(255, 255, 255, 0.85); /* White overlay */
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+/* Header */
+header {
+    background-color: rgba(12, 64, 128, 0.9); /* Navy with transparency */
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures header stays on top */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: #FFD700;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+
+}
+nav li a:active {
+   box-shadow: none
+}
+
+/* Main sections */
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+main h2 {
+    border-bottom: 2px solid #0B2545;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Services list */
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services li {
+    background-color: rgba(11, 37, 69, 0.05);
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-left: 4px solid #0B2545;
+    border-radius: 4px;
+}
+
+/* Call to Action Button */
+.cta-btn {
+    display: inline-block;
+    background-color: #0B2545;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+    background-color: #07315f;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(12, 64, 128, 0.9);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
